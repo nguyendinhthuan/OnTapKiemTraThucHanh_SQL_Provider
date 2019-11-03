@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TacGiaActivity">
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:hint="mã tác giả"
+        android:id="@+id/editTextMaTG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:hint="tên tác giả"
+        android:id="@+id/editTextTenTG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập Nhật"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonTim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tìm "
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <GridView
+        android:numColumns="2"
+        android:id="@+id/danhsachTG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+
+</LinearLayout>
